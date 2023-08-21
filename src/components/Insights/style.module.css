@@ -1,0 +1,40 @@
+.insightsDiv {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.summaryDiv, .insightsDiv {
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+.insightsDiv h3 {
+  font-weight: 400;
+}
+.summaryDiv {
+  margin-right: 20px;
+}
+.summaryIcon {
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: fit-content;
+}
+.point {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.point p{
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.recommendationsDiv p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}

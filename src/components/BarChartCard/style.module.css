@@ -1,0 +1,58 @@
+
+
+
+.icon {
+  margin-left: 8px;
+}
+
+
+.barChart {
+  margin-top: 20px;
+  height: 150px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+}
+.bar {
+  background-color: #f4c90a;
+  border-radius: 6px;
+  width: 15px;
+  margin: 0 2px;
+  height: 0;
+}
+
+.bar:hover {
+  background-color: #f0de8f;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltipText {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: gray ;
+  box-shadow: 0 0 5px #000000;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 10px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltipText {
+  visibility: visible;
+}
