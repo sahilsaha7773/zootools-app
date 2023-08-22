@@ -1,4 +1,3 @@
-import React from 'react'
 import { MdOutlinePeopleAlt } from 'react-icons/md'
 import styles from './style.module.css'
 

@@ -1,6 +1,4 @@
-import React from 'react'
 import { BiBulb, BiSolidDownArrow, BiSolidUpArrow } from 'react-icons/bi'
-import { HiOutlineLightBulb } from 'react-icons/hi'
 import styles from './style.module.css'
 export default function InsightsCard() {
   return (

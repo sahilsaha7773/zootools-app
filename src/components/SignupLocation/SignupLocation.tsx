@@ -1,5 +1,3 @@
-import React from 'react'
-import styles from './style.module.css'
 import Flag from 'react-flagkit'
 
 export default function SignupLocation() {

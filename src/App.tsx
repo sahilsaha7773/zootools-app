@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import BarChartCard from './components/BarChartCard/BarChartCard'
 import InsightsCard from './components/Insights/InsightsCard'
