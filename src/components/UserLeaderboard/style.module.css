@@ -13,6 +13,9 @@ td, th {
 tr {
   margin-bottom: 20px;
 }
+.tableDiv {
+  overflow-x: auto;
+}
 .tableHeader, .tableRow {
     display: flex;
     justify-content: space-between;

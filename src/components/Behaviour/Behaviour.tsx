@@ -1,5 +1,3 @@
-import Flag from 'react-flagkit'
-
 export default function Behaviour() {
   const data = [
     {
@@ -41,21 +39,28 @@ export default function Behaviour() {
   ]
   return (
     <div className='card' style={{ padding: '20px 40px' }}>
-      <h3>Behaviour</h3>
+      <div className='headerButtons'>
+        <h3>Behaviour</h3>
+        <div className='filter'>
+          <button className='active'>Browsers</button>
+          <button>Decides</button>
+        </div>
+      </div>
       <div>
         {
           data.map((item, index) => (
             <div className='level' style={{
               background: `linear-gradient(to right, rgba(244, 221, 10, 0.5) ${item.percentage}%, transparent ${item.percentage}%)`
             }} key={index}>
-              <Flag country={item.flag} size={24} />
-              <h3>{item.name}</h3>
-              <h3>{item.value}</h3>
+              <h3 style={{ marginLeft: "30px" }}>{item.name}</h3>
+              <h3 className="levelValue">{item.value}</h3>
             </div>
           ))
         }
-
       </div>
+      <button className='cardButton'>
+        See all countries
+      </button>
     </div>
   )
 }

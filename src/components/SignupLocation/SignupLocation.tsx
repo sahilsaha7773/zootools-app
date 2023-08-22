@@ -1,4 +1,5 @@
 import Flag from 'react-flagkit'
+import styles from './style.module.css'
 
 export default function SignupLocation() {
   const data = [
@@ -34,28 +35,36 @@ export default function SignupLocation() {
     },
     {
       name: 'Other',
-      flag: 'Global',
+      flag: 'IN',
       value: '2,000',
       percentage: 2
     },
   ]
   return (
     <div className='card' style={{ padding: '20px 40px' }}>
-      <h3>Signup location</h3>
+      <div className='headerButtons'>
+        <h3>Signup locations</h3>
+        <div className='filter'>
+          <button className='active'>Country</button>
+          <button>City</button>
+        </div>
+      </div>
       <div>
         {
           data.map((item, index) => (
             <div className='level' style={{
               background: `linear-gradient(to right, rgba(244, 221, 10, 0.5) ${item.percentage}%, transparent ${item.percentage}%)`
             }} key={index}>
-              <Flag country={item.flag} size={24} />
-              <h3>{item.name}</h3>
-              <h3>{item.value}</h3>
+              <Flag country={item.flag} size={24} className={styles.flag} />
+              <h3 style={{ marginLeft: "20px" }}>{item.name}</h3>
+              <h3 className='levelValue'>{item.value}</h3>
             </div>
           ))
         }
-
       </div>
+      <button className='cardButton'>
+        See all countries
+      </button>
     </div>
   )
 }

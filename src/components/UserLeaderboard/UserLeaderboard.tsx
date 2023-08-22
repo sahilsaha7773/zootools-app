@@ -21,7 +21,7 @@ export default function UserLeaderboard() {
   return (
     <div className='card' style={{ padding: '20px 40px' }}>
       <h3>User Leaderboard</h3>
-      <div className={styles.tables}>
+      <div className={styles.tableDiv}>
         <table>
           <tr>
             <th>Email</th>
@@ -39,23 +39,9 @@ export default function UserLeaderboard() {
           }
 
         </table>
-
-        {/* <div className={styles.tableHeader}>
-          <div className={styles.tableHeaderItem}>Email</div>
-          <div className={styles.tableHeaderItem}>Friends Invited</div>
-          <div className={styles.tableHeaderItem}>Countries</div>
-        </div>
-        <div className={styles.tableRow}>
-          <div className={styles.tableRowItem}>
-            paula.suarez@cons..es
-          </div>
-          <div className={styles.tableRowItem}>
-            10
-          </div>
-          <div className={styles.tableRowItem}>
-            Spain
-          </div>
-        </div> */}
+        <button className='cardButton'>
+          See Leaderboard
+        </button>
       </div>
     </div>
   )

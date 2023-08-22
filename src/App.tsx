@@ -16,7 +16,7 @@ function App() {
           <div className='timeFilter'>
             <button>1h</button>
             <button>24h</button>
-            <button>30d</button>
+            <button className='timeFilterActive'>30d</button>
             <button>60d</button>
           </div>
         </div>

@@ -17,17 +17,13 @@ export default function BarChartCard() {
           data.map((item, index) => (
             <div className={styles.bar + " " + styles.tooltip} style={{ height: `${item}%` }} key={index}>
               <div className={styles.tooltipText}>
-                3,000 signups<br/>
-                26th April
+                <strong>3,000</strong> signups<br />
+                <span>26th April</span>
               </div>
             </div>
           ))
         }
         <div className={styles.line}></div>
-
-        {/* <div className={styles.bar} style={{ height: '50%' }}></div>
-        <div className={styles.bar} style={{ height: '30%' }}></div>
-        <div className={styles.bar} style={{ height: '20%' }}></div> */}
       </div>
     </div>
   )

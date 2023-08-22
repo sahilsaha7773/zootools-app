@@ -2,7 +2,7 @@ import { BiBulb, BiSolidDownArrow, BiSolidUpArrow } from 'react-icons/bi'
 import styles from './style.module.css'
 export default function InsightsCard() {
   return (
-    <div className='card'>
+    <div className='card' style={{ marginBottom: "50px" }}>
       <h1>ZooTools insights</h1>
       <p>Making analytics simple and actionable</p>
       <div className={styles.insightsDiv}>

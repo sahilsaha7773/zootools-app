@@ -1,5 +1,3 @@
-import styles from './style.module.css'
-
 export default function Traffic() {
   const data = [
     {
@@ -35,10 +33,10 @@ export default function Traffic() {
   ]
   return (
     <div className='card' style={{ padding: '20px 40px' }}>
-      <div className={styles.header}>
+      <div className='headerButtons'>
         <h3>Traffic</h3>
         <div className='filter'>
-          <button>Source</button>
+          <button className='active'>Source</button>
           <button>City</button>
         </div>
       </div>
@@ -49,12 +47,15 @@ export default function Traffic() {
               background: `linear-gradient(to right, rgba(244, 221, 10, 0.5) ${item.percentage}%, transparent ${item.percentage}%)`
             }} key={index}>
               <h3>{item.name}</h3>
-              <h3>{item.value}</h3>
+              <h3 className='levelValue'>{item.value}</h3>
             </div>
           ))
         }
 
       </div>
+      <button className='cardButton'>
+        See Traffic sources
+      </button>
     </div>
   )
 }
