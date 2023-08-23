@@ -51,5 +51,5 @@
 }
 
 .tooltip:hover .tooltipText {
-  visibility: visible;
+  visibility: visible !important;
 }

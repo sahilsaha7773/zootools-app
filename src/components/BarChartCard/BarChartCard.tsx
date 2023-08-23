@@ -16,7 +16,10 @@ export default function BarChartCard() {
         {
           data.map((item, index) => (
             <div className={styles.bar + " " + styles.tooltip} style={{ height: `${item}%` }} key={index}>
-              <div className={styles.tooltipText}>
+              <div className={styles.tooltipText} style={{
+                visibility: `${index === data.length - 1 ? 'visible' : 'hidden'}`,
+                zIndex: `${index === data.length - 1 ? 1 : 2}`
+              }}>
                 <strong>3,000</strong> signups<br />
                 <span>26th April</span>
               </div>

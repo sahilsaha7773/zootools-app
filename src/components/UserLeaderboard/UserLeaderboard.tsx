@@ -3,17 +3,17 @@ import styles from './style.module.css'
 export default function UserLeaderboard() {
   const data = [
     {
-      email: 'paula.suarez@cons..es',
+      email: 'paula.@cons..es',
       friendsInvited: '6,500',
       countries: 'USA'
     },
     {
-      email: 'laura.kenet...3@yahoo.com',
+      email: 'laura3@yahoo.com',
       friendsInvited: '2,300',
       countries: 'Moncao'
     },
     {
-      email: 'paula.suarez@cons..es',
+      email: 'paula.@cons..es',
       friendsInvited: 10,
       countries: 'Spain'
     }
